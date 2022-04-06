@@ -15,7 +15,7 @@ public class AlunoService {
     private final AlunoRepository repository;
     private final ExportExcelService excelService;
 
-    public ByteArrayInputStream exportToExcel() {
+    public ByteArrayInputStream exportarAlunosExcel() {
         return excelService.exportToExcel();
     }
 

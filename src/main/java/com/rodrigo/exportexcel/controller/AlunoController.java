@@ -29,7 +29,7 @@ public class AlunoController {
 
     @GetMapping("export-excel")
     public ResponseEntity<InputStreamResource> exportExcel() {
-        ByteArrayInputStream stream = service.exportToExcel();
+        ByteArrayInputStream stream = service.exportarAlunosExcel();
 
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Disposition", "attchment; filename=alunos.xls");
