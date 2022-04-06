@@ -13,10 +13,10 @@ import java.util.List;
 public class AlunoService {
 
     private final AlunoRepository repository;
-    private final ExportExcelService excelService;
+    private final GerarPlanilhaService gerarPlanilhaService;
 
     public ByteArrayInputStream exportarAlunosExcel() {
-        return excelService.exportToExcel();
+        return gerarPlanilhaService.exportToExcel();
     }
 
     public List<Aluno> getAlunos () {

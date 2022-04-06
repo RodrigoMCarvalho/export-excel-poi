@@ -14,13 +14,12 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.lang.reflect.Field;
-import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class ExportExcelService {
+public class GerarPlanilhaService {
 
     private final AlunoRepository repository;
 
